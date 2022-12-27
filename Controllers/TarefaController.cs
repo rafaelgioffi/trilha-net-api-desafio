@@ -18,8 +18,7 @@ namespace TrilhaApiDesafio.Controllers
 
         [HttpGet("{id}")]
         public IActionResult ObterPorId(int id)
-        {
-            
+        {            
             var tarefa = _context.Tarefas.Find(id);
             if(tarefa == null)
             {
